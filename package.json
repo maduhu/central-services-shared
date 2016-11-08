@@ -1,6 +1,6 @@
 {
   "name": "central-services-shared",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared code for central services",
   "main": "src/index.js",
   "scripts": {
