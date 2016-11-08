@@ -1,2 +1,2 @@
-# central-hapi-base
-Shared Hapi code for central services
+# central-services-shared
+Shared code for central services
