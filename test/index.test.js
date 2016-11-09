@@ -15,6 +15,11 @@ Test('Index', indexTest => {
     test.end()
   })
 
+  indexTest.test('Exports Encoding', test => {
+    test.equal(Index.Encoding, require('../src/encoding'))
+    test.end()
+  })
+
   indexTest.test('Exports ErrorCategory', test => {
     test.equal(Index.ErrorCategory, require('../src/errors/category'))
     test.end()

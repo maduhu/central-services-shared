@@ -7,6 +7,10 @@ machine:
   node:
     version: 6.5.0
 
+dependencies:
+  pre:
+    - curl -udwolla:${NPM_TOKEN} "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm/auth/leveloneproject" >> .npmrc
+
 test:
   pre:
     - mkdir -p ./test/results
