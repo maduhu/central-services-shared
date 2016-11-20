@@ -14,7 +14,7 @@ Test('BaseError test', errorTest => {
     payloadTest.test('assign error_id to constructor name and message to supplied message', test => {
       let error = new TestError()
 
-      test.equal(error.payload.error_id, 'TestError')
+      test.equal(error.payload.id, 'TestError')
       test.equal(error.payload.message, error.message)
       test.end()
     })

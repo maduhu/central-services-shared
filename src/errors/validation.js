@@ -6,7 +6,7 @@ const ErrorCategory = require('./category')
 class ValidationError extends BaseError {
   constructor (message, validationErrors) {
     super(ErrorCategory.BAD_REQUEST, message)
-    this.payload.validation_errors = validationErrors
+    this.payload.validationErrors = validationErrors
   }
 }
 

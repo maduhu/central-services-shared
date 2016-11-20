@@ -6,7 +6,7 @@ class BaseError extends Error {
     this.category = category
     this.name = this.constructor.name
     this.payload = {
-      error_id: this.name,
+      id: this.name,
       message: message
     }
 

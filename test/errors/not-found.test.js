@@ -10,7 +10,7 @@ Test('NotFoundError test', notFoundTest => {
       const message = 'some message'
       let error = new NotFoundError(message)
       test.equal(error.category, ErrorCategory.NOT_FOUND)
-      test.equal(error.payload.error_id, 'NotFoundError')
+      test.equal(error.payload.id, 'NotFoundError')
       test.equal(error.payload.message, message)
       test.end()
     })

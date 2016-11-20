@@ -11,9 +11,9 @@ Test('ValidationError test', validationTest => {
       const validationErrors = [{}]
       let error = new ValidationError(message, validationErrors)
       test.equal(error.category, ErrorCategory.BAD_REQUEST)
-      test.equal(error.payload.error_id, 'ValidationError')
+      test.equal(error.payload.id, 'ValidationError')
       test.equal(error.payload.message, message)
-      test.equal(error.payload.validation_errors, validationErrors)
+      test.equal(error.payload.validationErrors, validationErrors)
       test.end()
     })
     payloadTest.end()
